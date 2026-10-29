@@ -1,0 +1,34 @@
+========================================
+  FLUJO DE TRABAJO EN GIT (4 PERSONAS)
+========================================
+
+--- CADA VEZ QUE VAYAS A PROGRAMAR ---
+
+1. ACTUALIZAR TU EQUIPO:
+   (Trae los últimos cambios de tu equipo antes de empezar)
+   git checkout main
+   git pull origin main
+
+2. CREAR TU RAMA:
+   (Usa nombres claros y SIN ESPACIOS, ej: feature/login-usuario)
+   git checkout -b feature/nombre-tarea
+
+3. GUARDAR CAMBIOS:
+   (Haz tu codigo y registra tus archivos modificados localmente)
+   git add .
+   git commit -m "feat: descripcion corta de lo que hiciste"
+
+4. SUBIR A GITHUB:
+   (Envía tu rama a la nube)
+   git push -u origin feature/nombre-tarea
+
+5. EN LA WEB DE GITHUB:
+   - Haz clic en "Compare & pull request".
+   - IMPORTANTE: Verifica que diga "base: main" ⬅ "compare: feature/tu-rama".
+   - Asigna a un compañero como Reviewer para que revise.
+   - Presiona "Squash and merge" para integrar los cambios.
+
+6. REINICIAR LOCALMENTE:
+   (Regresa a main y descarga lo que acabas de fusionar)
+   git checkout main
+   git pull origin main
